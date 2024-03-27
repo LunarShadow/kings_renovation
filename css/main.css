@@ -1,8 +1,9 @@
 html {
   background-color: #fdfdfc;
-  color: #222;
+  color: #222222;
   font-size: 1em;
   line-height: 1.4;
+  font-family: Tahoma, Geneva, sans-serif;
 }
 
 ::-moz-selection {
