@@ -1,16 +1,14 @@
 .flex-container {
-  min-height: 100px;
-  max-height: 200px;
   display: flex;
-  justify-content: center;
 }
 
-nav.flex-container{
+nav.flex-container {
+  min-height: 100px;
+  max-height: 200px;
+  justify-content: center;
   flex:1;
   -webkit-flex: 1;
   -ms-flex: 1;
-  width: 100vw;
-
 }
 .logo-image {
   margin-top: -15px;
@@ -22,4 +20,45 @@ nav.flex-container{
   font-weight: bold;
   color: #b3302e;
   padding: 15px 0px;
+}
+
+.hero-container {
+  padding: 10px 10px;
+  height: max-content;
+  justify-content: space-evenly;
+}
+
+.hero-container div {
+  flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+}
+
+.hero-text {
+  text-align: center;
+  margin: 55px auto;
+}
+
+.headline {
+  font-size: 35px;
+  font-weight: bold;
+  text-transform: capitalize;
+  margin-bottom: -10px;
+}
+
+.sub-headline {
+  font-size: 20px;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #b3302e;
+  color: #fdfdfc;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: capitalize;
+  border: 1px solid #b3302e;
+  border-radius: 20px;
+  padding: 10px 20px;
+  text-decoration: none;
 }
