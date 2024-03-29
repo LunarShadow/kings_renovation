@@ -1,5 +1,6 @@
 .flex-container {
   display: flex;
+  flex-wrap: wrap;
 }
 
 nav.flex-container {
@@ -9,56 +10,59 @@ nav.flex-container {
   flex:1;
   -webkit-flex: 1;
   -ms-flex: 1;
-}
-.logo-image {
-  margin-top: -15px;
-  height: 50%;
+  border-bottom: solid 1px #d32b29;
+  width: 100%;
 }
 .logo-text {
-  font-size: 35px;
+  font-size: 2em;
   display: inline-block;
   font-weight: bold;
   color: #b3302e;
-  padding: 15px 0px;
 }
 
 .hero-container {
-  padding: 10px 10px;
+  padding: 4rem 1rem;
   height: max-content;
   justify-content: space-evenly;
 }
-
 .hero-container div {
   flex: 1;
   -webkit-flex: 1;
   -ms-flex: 1;
 }
-
+.hero-image-container{
+  width: 50%
+}
+.hero-images {
+  display: inline-block;
+  object-fit: cover;
+  width: 100%;
+}
 .hero-text {
   text-align: center;
-  margin: 55px auto;
+  margin: 2rem auto;
 }
 
 .headline {
-  font-size: 35px;
+  font-size: 1.5rem;
   font-weight: bold;
   text-transform: capitalize;
-  margin-bottom: -10px;
+  margin-bottom: -0.5em;
 }
 
 .sub-headline {
-  font-size: 20px;
+  font-size: 1em;
 }
 
 .cta-button {
   display: inline-block;
   background-color: #b3302e;
   color: #fdfdfc;
-  font-size: 16px;
+  font-size: .9rem;
   font-weight: bold;
   text-transform: capitalize;
-  border: 1px solid #b3302e;
-  border-radius: 20px;
-  padding: 10px 20px;
+  border: .8rem solid #b3302e;
+  border-radius: 1.2rem;
+  padding: 0rem 1.5rem;
   text-decoration: none;
 }
