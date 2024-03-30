@@ -62,15 +62,13 @@ textarea {
   resize: vertical;
 }
 
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-
-
-
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
+a:any-link,
+a:-webkit-any-link,
+a:any-link:visited,
+a:-webkit-any-link:visited {
+  text-decoration: none;
+  color: #222222;
+}
 
 /*
  * Hide visually and from screen readers
@@ -146,23 +144,6 @@ textarea {
 }
 
 /* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
-
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
-}
-
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
-}
-
-/* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
    https://www.phpied.com/delay-loading-your-print-css/
@@ -180,7 +161,8 @@ textarea {
   }
 
   a,
-  a:visited {
+  a:visited
+  {
     text-decoration: none;
   }
 
