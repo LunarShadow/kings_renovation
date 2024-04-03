@@ -67,7 +67,7 @@ a:-webkit-any-link,
 a:any-link:visited,
 a:-webkit-any-link:visited {
   text-decoration: none;
-  color: #222222;
+  color: inherit;
 }
 
 /*

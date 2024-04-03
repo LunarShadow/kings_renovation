@@ -1,14 +1,14 @@
 .flex-container {
   display: flex;
   flex-wrap: wrap;
+  flex:1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
 }
 nav.flex-container {
   min-height: 100px;
   max-height: 200px;
   justify-content: center;
-  flex:1;
-  -webkit-flex: 1;
-  -ms-flex: 1;
   border-bottom: solid 1px #d32b29;
   width: 100%;
 }
@@ -20,7 +20,7 @@ nav.flex-container {
 
 .hero-container {
   position: relative;
-  margin: 2rem auto 0;
+  margin: 2rem auto 2rem;
   height: auto;
 }
 
@@ -62,44 +62,102 @@ nav.flex-container {
   font-size: .9em;
 }
 .cta-button {
-  display: inline-block;
-  background-color: #b3302e;
+  background-color: #d32b29;
   color: #fdfdfc !important;
   font-weight: bold;
   text-transform: capitalize;
-  border: .8rem solid #b3302e;
+  text-align: center;
+  border: .8rem solid #d32b29;
   border-radius: 1.2rem;
   padding: 0rem 1.5rem;
   text-decoration: none;
   font-size: .7rem;
 }
 .heading{
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: bold;
   margin: 0rem;
+  text-align: center;
+  color: #b3302e;
 }
-
+#services {
+  position: relative;
+}
 .service-text {
   padding: 1rem;
-  line-height:1.8rem;
+  line-height:2rem;
   font-size: 1.1rem;
+  text-align: justify;
 }
 #services ul {
   list-style-type: circle;
 }
-
+#services.flex-container {
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 4rem;
+}
+#services img {
+  width: 100%;
+  padding: 2rem 0;
+}
 #services .cta-button {
-  line-height: initial;
+  width: 150px;
+  margin: 0 auto;
+}
+#hero, #services, #reviews, #contact {
+  max-width: 1500px;
+  margin-left:auto;
+  margin-right:auto;
+}
+.review-carousel {
+  height: 300px;
+  padding: 1rem 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3rem;
+  border-radius: 1rem;
+}
+.rcd {
+  padding: .5rem 0;
+  width: 80%;
+  margin: 0 auto;
+  overflow: visible;
+}
+.review-text {
+  line-height: 1.8rem;
+  text-align: justify;
+}
+.review-name {
+  font-weight: bold;
+  text-align: right;
+}
+
+footer {
+  background-color: rgba(211, 43, 41, 0.71);
+  color: rgba(252, 247, 247, 0.71);
+  width: 100%;
+  text-align: center;
+  padding: 2rem;
+}
+footer a {
+  color: rgba(252, 247, 247, 0.94) !important;
 }
 @media only screen and (min-width: 600px) {
   /* For tablets: */
-
+  .hero-container {
+    margin: 4rem auto;
+  }
 }
-
 @media only screen and (min-width: 768px) {
   /* For desktop: */
+  .carousel {
+    height: 500px;
+    margin: 0 auto;
+  }
   .hero-container {
-    margin: 2rem auto;
+    margin: 4rem auto;
   }
   .sub-headline {
     font-size: 1rem;
@@ -109,5 +167,14 @@ nav.flex-container {
   }
   .cta-button {
     font-size: .9rem;
+  }
+  #services img {
+    max-height: 500px;
+    padding: 2rem 0;
+    display: block;
+    margin: 0 auto;
+  }
+  #services .cta-button {
+    width: 200px;
   }
 }
