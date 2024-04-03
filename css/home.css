@@ -13,36 +13,53 @@ nav.flex-container {
   width: 100%;
 }
 .logo-text {
-  display: inline-block;
   font-weight: bold;
   color: #b3302e;
   font-size: 2em;
 }
+
 .hero-container {
-  padding: 2rem 1rem;
-  height: max-content;
+  position: relative;
+  margin: 2rem auto 0;
+  height: auto;
 }
-.hero-container div {
-  flex: 1;
-  -webkit-flex: 1;
-  -ms-flex: 1;
+
+.carousel {
+  height: 350px
 }
-.hero-images, .service-image {
-  display: inline-block;
-  object-fit: cover;
+
+.carousel-cell {
+  height: 100%;;
+}
+
+.carousel-cell-image {
   width: 100%;
 }
+
 .hero-text {
+  position: absolute;
+  z-index: 10;
   text-align: center;
   font-size: 1.1rem;
-  display: block;
-  height: max-content;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(253, 253, 252, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
 }
+
 .headline {
   font-weight: bold;
   text-transform: capitalize;
   margin-bottom: -0.5em;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
+}
+.sub-headline {
+  font-size: .9em;
 }
 .cta-button {
   display: inline-block;
@@ -54,7 +71,7 @@ nav.flex-container {
   border-radius: 1.2rem;
   padding: 0rem 1.5rem;
   text-decoration: none;
-  font-size: .9rem;
+  font-size: .7rem;
 }
 .heading{
   font-size: 2rem;
@@ -76,20 +93,21 @@ nav.flex-container {
 }
 @media only screen and (min-width: 600px) {
   /* For tablets: */
-  .hero-text {
-    padding: 5rem 0rem;
-  }
+
 }
 
 @media only screen and (min-width: 768px) {
   /* For desktop: */
-  .hero-text {
-    align-self: center;
+  .hero-container {
+    margin: 2rem auto;
   }
   .sub-headline {
-    font-size: 1em;
+    font-size: 1rem;
   }
   .headline {
-    font-size: 1.5rem;
+    font-size: 1.9rem;
+  }
+  .cta-button {
+    font-size: .9rem;
   }
 }
