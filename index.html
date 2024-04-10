@@ -158,7 +158,7 @@
 <section id="contact" class="">
   <p class="heading">Contact Us</p>
   <p class="disclaimer">** Free quote if project is completed through us.</p>
-  <form class="contact-form" method="POST" data-netlify="true" name="Website Quote Inquiry" netlify>
+  <form class="contact-form" method="POST" data-netlify="true" name="Website Quote Inquiry" netlify-honeypot="bot-field">
     <input type="hidden" name="subject" value="Website Quote Inquiry" />
     <label for="name">Name</label>
     <input type="text" id="name" name="name" required/>
@@ -174,6 +174,8 @@
      Please include details for the job you need done, and your timeline.
     </p>
     <textarea id="details" name="details" rows="5" wrap="soft" required></textarea>
+
+    <p class="spam-field"><label><input name="bot-field" /></label></p>
     <input type="submit">
   </form>
 
