@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;0,900&display=swap');
+
 html {
   background-color: #fdfdfc;
   color: #222222;
   font-size: 1em;
   line-height: 1.4;
-  font-family: Tahoma, Geneva, sans-serif;
+  font-family: "Lato", Geneva, sans-serif;
 }
 
 ::-moz-selection {

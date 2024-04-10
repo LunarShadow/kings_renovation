@@ -11,6 +11,7 @@ nav.flex-container {
   justify-content: center;
   border-bottom: solid 2px #d32b29;
   width: 100%;
+  background-color: #fdfdfc;
 }
 .logo-text {
   font-weight: bold;
@@ -81,9 +82,8 @@ nav.flex-container {
   font-size: .7rem;
 }
 .heading{
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: bold;
-  margin: 0;
   text-align: center;
   color: #b3302e;
   width: 100%;
@@ -115,12 +115,13 @@ nav.flex-container {
   margin: 0 auto;
 }
 #hero, #services, #reviews, #about-us, #contact {
-  max-width: 1500px;
+  max-width: 1000px;
   margin-left:auto;
   margin-right:auto;
-  margin-top: 6rem;
 }
-
+#services, #reviews, #about-us, #contact {
+  padding: 5rem 1rem;
+}
 #about-us img {
   width: 85%;
   height: 85%;
@@ -133,22 +134,31 @@ nav.flex-container {
 }
 
 .review-carousel {
-  height: 350px;
+  height: 400px;
   padding: 1rem 2rem;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 6rem;
   border-radius: 1rem;
 }
+.review-carousel-cell{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .rcd {
-  padding: .5rem 0;
+  padding: 1.9rem 1.5rem;
   width: 80%;
+  height: 100%;
   margin: 0 auto;
-  overflow: visible;
+  overflow: auto;
+  border: 1px solid #fdfdfc;
+  border-radius: 5rem;
 }
 .review-text {
   line-height: 1.8rem;
-  text-align: justify;
+  text-align: center;
 }
 .review-name {
   font-weight: bold;
@@ -164,6 +174,12 @@ footer {
 }
 footer a {
   color: rgba(252, 247, 247, 0.94) !important;
+}
+.services-section{
+  display: block;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .service-accordion {
   background-color: #d55252;
@@ -242,6 +258,19 @@ label {
 .spam-field {
   display: none;
 }
+.red-bg {
+  background-color: #d55252;
+  color: #fdfdfc;
+}
+.red-bg .heading {
+  color: #fdfdfc;
+}
+.bold {
+  font-weight: bold;
+}
+.center {
+  text-align: center;
+}
 @media only screen and (min-width: 600px) {
   /* For tablets: */
   .carousel {
@@ -289,5 +318,14 @@ label {
   }
   #contact{
     padding: 4rem 10rem;
+  }
+  .heading {
+    font-size: 2.5rem;
+  }
+  #services, #reviews, #about-us, #contact {
+    padding: 4rem 2.5rem 10rem;
+  }
+  .rcd{
+    padding: .5rem 5rem;
   }
 }
