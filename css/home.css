@@ -129,7 +129,7 @@ nav.flex-container {
   max-width: 410px;
   max-height: 410px;
   padding: 2rem;
-  border-radius: 25rem;
+  border-radius: 5rem;
   display: inline-block;
   margin:0 auto;
 }
