@@ -115,7 +115,7 @@ nav.flex-container {
   width: 150px;
   margin: 0 auto;
 }
-#hero, #services, #reviews, #about-us, #contact {
+ #services, #reviews, #about-us, #contact {
   max-width: 1000px;
   margin-left:auto;
   margin-right:auto;
