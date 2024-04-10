@@ -107,8 +107,10 @@ nav.flex-container {
   margin-bottom: 4rem;
 }
 #services img {
-  width: 100%;
+  width: 500px;
+  height: 500px;
   padding: 2rem 0;
+  border-radius: 50%;
 }
 #services .cta-button {
   width: 150px;
@@ -159,10 +161,12 @@ nav.flex-container {
 .review-text {
   line-height: 1.8rem;
   text-align: center;
+  color: #222222;
 }
 .review-name {
   font-weight: bold;
   text-align: center;
+  color: #222222;
 }
 
 footer {
